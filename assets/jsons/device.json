@@ -1,0 +1,28 @@
+{
+  "device_data": {
+    "Wrong_touch": {
+      "pod1": 0,
+      "pod2": 2,
+      "pod3": 0,
+      "pod4": 0,
+      "pod5": 0,
+      "pod6": 0
+    },
+    "right_touch": {
+      "pod1": 0,
+      "pod2": 2,
+      "pod3": 0,
+      "pod4": 0,
+      "pod5": 0,
+      "pod6": 0
+    },
+    "average_reaction_time": {
+      "pod1": 1,
+      "pod2": 2,
+      "pod3": 0,
+      "pod4": 0,
+      "pod5": 0,
+      "pod6": 0
+    }
+  }
+}

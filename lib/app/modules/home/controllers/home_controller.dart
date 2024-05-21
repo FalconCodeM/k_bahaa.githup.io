@@ -227,11 +227,11 @@ class HomeController extends GetxController {
         // in here will go to result page
         Get.to(const TrainingResult());
 
-        // here you will add result from device
-        // by replace FaceUsers.trainingData.pods to device result
-        // you have to make that result to be list
+        // here you have to set all data from device
         trainingData.add(
           TrainingModel(
+            // here you will add your response from device
+            // pods: podsFromDevice,
             pods: FakeUsers.trainingData.pods.toList(),
             pods1: setPod1.value,
             pods2: setPod2.value,

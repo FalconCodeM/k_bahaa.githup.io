@@ -12,6 +12,7 @@ import 'package:k_bahaa/app/modules/home/views/screens/history/history_screen.da
 import 'package:k_bahaa/app/modules/home/views/screens/history/user_training_history_view.dart';
 import 'package:k_bahaa/app/modules/home/views/screens/home_screen.dart';
 import 'package:k_bahaa/app/modules/home/views/screens/start_training_screens/start_training.dart';
+import 'package:k_bahaa/app/modules/home/views/screens/start_training_screens/start_training_screen.dart';
 import 'package:k_bahaa/app/modules/home/views/screens/start_training_screens/training_result.dart';
 import 'package:k_bahaa/app/routes/app_pages.dart';
 
@@ -268,7 +269,7 @@ class HomeController extends GetxController {
         'Error',
         'User not found',
         snackPosition: SnackPosition.BOTTOM,
-        duration: Duration(seconds: 3),
+        duration: const Duration(seconds: 3),
       );
     }
   }
@@ -304,6 +305,10 @@ class HomeController extends GetxController {
     }
   }
 
+  void cancelData() {
+    _updateAllUserData();
+    Get.to(const StartTrainingScreen());
+  }
   void _updateAllUserData() {
     setPod1.value = 0;
     setPod2.value = 0;
@@ -324,4 +329,6 @@ class HomeController extends GetxController {
     // Log the error details for further analysis
     print("FlutterBluePlusException: ${e.code}, ${e.description}");
   }
+
+
 }

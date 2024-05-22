@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:k_bahaa/app/data/models/training_model.dart';
 import 'package:k_bahaa/app/data/models/users_model.dart';
-import 'package:k_bahaa/app/data/widgets/reusable_button.dart';
 import 'package:k_bahaa/app/data/widgets/reusable_pods_item_for_list.dart';
 import 'package:k_bahaa/app/data/widgets/reusable_pods_list_view.dart';
 import 'package:k_bahaa/app/data/widgets/reusable_text.dart';
@@ -43,7 +42,7 @@ class UserHistoryScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 const ReusableText(text: "Training time"),
-                ReusableText(text: trainingData.startTraining),
+                ReusableText(text: user.trainingTime),
               ],
             ),
             SizedBox(

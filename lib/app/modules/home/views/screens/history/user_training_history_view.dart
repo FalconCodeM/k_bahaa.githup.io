@@ -60,7 +60,7 @@ class UserTrainingHistoryView extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                       ReusableText(
-                        text: userData.trainingData.last.startTraining,
+                        text: userData.trainingTime,
                         fontColor: Colors.grey.shade600,
                         fontWeight: FontWeight.bold,
                       ),

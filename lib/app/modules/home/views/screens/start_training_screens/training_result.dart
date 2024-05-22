@@ -226,7 +226,8 @@ class TrainingResult extends GetView<HomeController> {
             SizedBox(
               height: 15.h,
             ),
-            ReusableButton(onTap:controller.savingData, text: "Save")
+            ReusableButton(onTap:controller.savingData, text: "Save"),
+            ReusableButton(onTap:controller.cancelData, text: "cancel",btnColor: Colors.redAccent.shade400,)
           ],
         ),
       ),
